@@ -1,0 +1,182 @@
+@import url(https://fonts.google.com/specimen/Libre+Baskerville);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D7BDE2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: #D7BDE2;
+    text-align: center;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #696969;
+    margin: 0 30px;
+    padding: 15px 15px;
+    border-radius: 30px;
+}
+nav a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.cabecera-img{
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: change 20s infinite;
+    alternate: linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 80%;
+}
+@keyframes change{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+h1{
+   font-family: 'Bangers', cursive;
+   padding: 20px;
+   text-align: center;
+}
+
+/* esto es para el boton de busqueda que estoy probando
+.box{ 
+    position: relative;
+    top: 40%;
+    left: 40%;
+    transform: translate( -50%, -50%);
+}
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    color: #444;
+    border: 3px solid aliceblue;
+    background: #fff url(./imagen/search-icon.jpg.svg)
+    no repeat 9px center;
+    width: 60px;
+    transition: none;
+}
+
+input.src:hover{
+    width: 150px;
+    background-color: #fff;
+    border-color: violet;
+    box-shadow: 0 0 5px #6dcff680;
+}*/
+
+img{
+    max-width: 100%;
+    border-radius: 8px 8px 0 0 !important;
+    max-height: 200px !important;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+}
+
+article.cardp{
+    max-width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 0 12px #d7d7d7;
+}
+
+.header-card img{
+border-radius: 8px 8px 0 0 !important;
+max-height: 200px !important;
+height: 200px;
+width: 100%;
+
+}
+  
+.categoria-card{
+    margin-top: 1rem;
+}
+
+.categoria-card span{
+    background-color: violet;
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+}
+
+.card footer{
+    padding: 0 1rem;
+}
+
+.perfil-card{
+    display: inline-block;
+    align-items: center;
+   
+}
+
+.img-perfil-card{
+    display: inline-block;
+    width: 50px;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 50%;
+}
+
+.text-perfil-card{
+    display: inline-block;
+    flex-flow: column;
+}
+
+.text-perfil-card span:nth-child(2){
+color: #cfcfcf;
+}
+
+.card-wrap{
+    display: inline-block;
+    flex-flow: wrap;
+}
+
+.container{
+    display: inline-block;
+    padding: 1em;
+    background-color: #D7BDE2;
+    overflow: hidden;
+}
