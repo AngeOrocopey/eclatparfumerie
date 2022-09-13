@@ -36,29 +36,27 @@ nav a:hover{
 
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
 .slider{
     width: 100%;
-    height: 500px;
+    height: auto;
+    /*le quite el valor en px y lo puse auto*/
     overflow: hidden;
+    margin= 0%;
 }
 .slider ul{
     display: flex;
-    animation: change 20s infinite;
-    alternate: linear;
-    width: 400%;
+    animation: change 20s infinite alternate linear;
+    /* alternate: linear; Es parte de la animación*/
+    width: 500%;
+    /*este valor corresponde a 100% multiplicado por el número de imagenes del slider*/
 }
 .slider li{
     width: 100%;
     list-style: none;
 }
 .slider img{
-    width: 100%;
-    height: 80%;
+    max-width: 100%;
+    max-height: 100%;
 }
 @keyframes change{
     0%{margin-left: 0%;}
@@ -75,10 +73,24 @@ nav a:hover{
 }
 
 h1{
-   font-family: 'Bangers', cursive;
-   padding: 20px;
+   font-family: 'estonia', cursive;
    text-align: center;
+   font-size: 4em;
+   color:rgb(66, 64, 66) 
+    /*agregue las propiedades de la marca*/
 }
+
+h1,#logo{
+    display: inline-block;
+    padding-bottom: 20;
+}
+#header img{
+    height: 30px;
+}
+header{
+    margin: 10px;
+}
+/*lo anterior es para alinear la marca y el logo*/
 
 /* esto es para el boton de busqueda que estoy probando
 .box{ 
@@ -107,6 +119,7 @@ input.src:hover{
     box-shadow: 0 0 5px #6dcff680;
 }*/
 
+/*
 img{
     max-width: 100%;
     border-radius: 8px 8px 0 0 !important;
@@ -115,6 +128,7 @@ img{
     width: 100%;
     display: inline-block;
 }
+Mejor quitar esto porque condiciona a todas las imagenes*/
 
 article.cardp{
     max-width: 350px;
@@ -129,7 +143,6 @@ border-radius: 8px 8px 0 0 !important;
 max-height: 200px !important;
 height: 200px;
 width: 100%;
-
 }
   
 .categoria-card{
@@ -153,7 +166,8 @@ width: 100%;
    
 }
 
-.img-perfil-card{
+.perfil-card img{
+    /*cambie el selector*/
     display: inline-block;
     width: 50px;
     margin: 1rem 1rem 1rem 0;
@@ -181,3 +195,8 @@ color: #cfcfcf;
     overflow: hidden;
 }
 
+/*esto era para alinear las tarjetas pero hay que modificarlo con flex
+#perf1, #perf2, #perf3{
+    display: inline-block;
+}
+*/
