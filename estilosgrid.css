@@ -250,5 +250,38 @@ nav a:hover{
         border-radius: 4px;
         cursor: pointer;
       }
-      
+      .tarjeta{
+        width: 300px;
+        border:1px solid gray;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .tarjeta img {
+        width: 100%;
+    }
+    
+    .tarjeta p, .tarjeta h2 {
+        padding: 10px;
+    }
+    
+    .tarjeta>img{
+        width: 100%;
+    }
+    
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .boton {
+        color: aliceblue;
+        background-color: blueviolet;
+        border-radius: 1px;
+        margin: 20px;
+        text-decoration: none;
+    }
     
