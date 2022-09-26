@@ -75,7 +75,7 @@ nav a:hover{
         width: 500%;
     }
     .slider li{
-        width: 100%;
+        width: 150%;
         list-style: none;
     }
     .slider img{
@@ -250,6 +250,7 @@ nav a:hover{
         border-radius: 4px;
         cursor: pointer;
       }
+      
       .tarjeta{
         width: 300px;
         border:1px solid gray;
@@ -267,21 +268,4 @@ nav a:hover{
     
     .tarjeta>img{
         width: 100%;
-    }
-    
-    .contenedor{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .boton {
-        color: aliceblue;
-        background-color: blueviolet;
-        border-radius: 1px;
-        margin: 20px;
-        text-decoration: none;
-    }
     
